@@ -86,21 +86,67 @@
   text-transform: uppercase;
 }
 
-/* Nav Menu Desktop */
-.nav-menu {
+/* -------------------------------------------------------------
+   MOBILE-FIRST NAVIGATION PATTERN
+   Default styles apply to mobile viewport (< 992px)
+   ------------------------------------------------------------- */
+
+/* Mobile Toggle Button */
+.mobile-toggle {
   display: flex;
   align-items: center;
-  gap: var(--space-6);
+  justify-content: center;
+  padding: var(--space-2);
+  color: var(--color-ink-primary);
+  border-radius: var(--radius-sm);
+  z-index: 1001;
+}
+
+.mobile-toggle svg {
+  width: 28px;
+  height: 28px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+/* Nav Menu Mobile Drawer (Hidden offscreen by default) */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 85%;
+  max-width: 380px;
+  height: 100vh;
+  background-color: var(--color-bg-main);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--space-20) var(--space-8) var(--space-10);
+  box-shadow: var(--shadow-lg);
+  transition: right var(--transition-normal);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+/* Open state on mobile */
+.nav-menu[data-open="true"],
+.nav-menu.is-open {
+  right: 0;
 }
 
 .nav-list {
   display: flex;
-  align-items: center;
-  gap: var(--space-6);
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
 }
 
 .nav-link {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-lg);
+  width: 100%;
   font-weight: 600;
   color: var(--color-ink-primary);
   position: relative;
@@ -124,93 +170,82 @@
   border-radius: var(--radius-full);
 }
 
-/* Mobile Toggle */
-.mobile-toggle {
-  display: none;
-  padding: var(--space-2);
-  color: var(--color-ink-primary);
-  border-radius: var(--radius-sm);
-  z-index: 1001;
+.nav-cta {
+  width: 100%;
 }
 
-.mobile-toggle svg {
-  width: 28px;
-  height: 28px;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
+.nav-cta .btn {
+  width: 100%;
+  justify-content: center;
 }
 
-/* Mobile Nav Overlay */
-@media (max-width: 991px) {
+/* Backdrop overlay */
+.nav-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(26, 26, 36, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+  z-index: 999;
+}
+
+.nav-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* -------------------------------------------------------------
+   DESKTOP NAVIGATION OVERRIDES (>= 992px)
+   ------------------------------------------------------------- */
+@media (min-width: 992px) {
   .mobile-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
+  }
+
+  .nav-backdrop {
+    display: none;
   }
 
   .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 85%;
-    max-width: 380px;
-    height: 100vh;
-    background-color: var(--color-bg-main);
-    flex-direction: column;
-    align-items: flex-start;
-    padding: var(--space-20) var(--space-8) var(--space-10);
-    box-shadow: var(--shadow-lg);
-    transition: right var(--transition-normal);
-    z-index: 1000;
-    overflow-y: auto;
-  }
-
-  .nav-menu.is-open {
-    right: 0;
+    position: static;
+    width: auto;
+    max-width: none;
+    height: auto;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    box-shadow: none;
+    z-index: auto;
+    overflow-y: visible;
+    gap: var(--space-6);
   }
 
   .nav-list {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: var(--space-4);
-    margin-bottom: var(--space-8);
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    gap: var(--space-6);
+    margin-bottom: 0;
   }
 
   .nav-link {
-    font-size: var(--font-size-lg);
-    width: 100%;
+    font-size: var(--font-size-sm);
+    width: auto;
     padding: var(--space-2) 0;
   }
 
   .nav-cta {
-    width: 100%;
+    width: auto;
   }
 
   .nav-cta .btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  /* Backdrop overlay */
-  .nav-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(26, 26, 36, 0.5);
-    backdrop-filter: blur(4px);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity var(--transition-normal), visibility var(--transition-normal);
-    z-index: 999;
-  }
-
-  .nav-backdrop.is-visible {
-    opacity: 1;
-    visibility: visible;
+    width: auto;
   }
 }
 
