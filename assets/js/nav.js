@@ -1,6 +1,7 @@
 /**
  * Mobile Navigation Module
- * Handles responsive menu toggle, accessibility focus trap, ARIA attributes, and Esc key listeners.
+ * Mobile-first pattern: updates `data-open` attribute and `.is-open` class on .nav-menu.
+ * Handles focus trap, ARIA attributes, and Esc key listeners.
  */
 
 export function initNav() {
@@ -26,6 +27,7 @@ export function initNav() {
   function openMenu() {
     isOpen = true;
     toggleBtn.setAttribute('aria-expanded', 'true');
+    navMenu.setAttribute('data-open', 'true');
     navMenu.classList.add('is-open');
     if (backdrop) backdrop.classList.add('is-visible');
     document.body.style.overflow = 'hidden';
@@ -39,6 +41,7 @@ export function initNav() {
   function closeMenu() {
     isOpen = false;
     toggleBtn.setAttribute('aria-expanded', 'false');
+    navMenu.setAttribute('data-open', 'false');
     navMenu.classList.remove('is-open');
     if (backdrop) backdrop.classList.remove('is-visible');
     document.body.style.overflow = '';
