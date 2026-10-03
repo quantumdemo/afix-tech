@@ -19,8 +19,8 @@ export function initAnimations() {
 
   const observerOptions = {
     root: null,
-    rootMargin: '0px 0px -50px 0px',
-    threshold: 0.15
+    rootMargin: '50px 0px 0px 0px', // Trigger slightly ahead of viewport entry so content is ready
+    threshold: 0.05
   };
 
   const revealObserver = new IntersectionObserver((entries, observer) => {
