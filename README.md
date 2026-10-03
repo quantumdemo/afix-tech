@@ -5,8 +5,8 @@ This is the authoritative source repository for the AfixTech portfolio website (
 ## 1. Project Overview
 * **Client:** AfixTech
 * **Brand Subtitle:** Communications Networks
-* **Primary Contact Phone:** +234 810 592 1083
-* **Primary Contact Email:** afixtech.cn@gmail.com
+* **Primary Contact Phone:** 08140020576
+* **Primary Contact Email:** afezolalekanalimi@gmail.com
 * **Primary Objective:** Showcase AfixTech's professional web engineering capabilities and capture client project inquiries.
 
 ---
@@ -29,7 +29,7 @@ Per Section 2.5 of the production specification and client decision:
 ## 4. Contact Form Integration
 * **Service:** Web3Forms third-party static endpoint (`https://api.web3forms.com/submit`).
 * **Validation & Security:** Native HTML5 constraints with client-side JS feedback, hidden honeypot spam protection (`botcheck`), and accessible `aria-live` status regions.
-* **Fallback:** Direct mailto links to `afixtech.cn@gmail.com`.
+* **Fallback:** Direct mailto links to `afezolalekanalimi@gmail.com`.
 
 ---
 

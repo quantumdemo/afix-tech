@@ -120,7 +120,7 @@ export function initContactForm() {
     } catch (err) {
       if (statusAlert) {
         statusAlert.className = 'form-status-alert error';
-        statusAlert.textContent = 'Oops! There was a problem sending your message. Please try again or email us directly at afixtech.cn@gmail.com.';
+        statusAlert.textContent = 'Oops! There was a problem sending your message. Please try again or email us directly at afezolalekanalimi@gmail.com.';
       }
     } finally {
       if (submitBtn) {
