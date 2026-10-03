@@ -1,0 +1,79 @@
+:root {
+  /* Brand Colors - Verified WCAG 2.2 AA Compliant */
+  --color-burgundy: #5C061C;      /* Primary Brand Color */
+  --color-burgundy-dark: #3D0312; /* Deep Burgundy Hover */
+  --color-deep-red: #8B0000;      /* Accent Red */
+  --color-deep-red-hover: #A00000;
+
+  /* Neutral Surfaces */
+  --color-bg-main: #FFFFFF;       /* Base White Surface */
+  --color-bg-surface: #FAF7F8;    /* Surface Tint */
+  --color-bg-card: #FFFFFF;       /* Card Background */
+  --color-blush: #FDF5F6;         /* Soft Blush Accent Surface */
+  --color-blush-border: #F3E0E3;  /* Subtle Blush Border */
+
+  /* Typography & Ink */
+  --color-ink-primary: #1A1A24;   /* High-contrast body text */
+  --color-ink-secondary: #4A4A58; /* Muted secondary text */
+  --color-ink-muted: #717182;     /* Muted metadata text */
+  --color-ink-inverse: #FFFFFF;   /* Text on dark backgrounds */
+
+  /* Borders & Dividers */
+  --color-border-light: #E6E1E4;  /* Crisp light borders */
+  --color-border-dark: rgba(255, 255, 255, 0.15);
+
+  /* System / Feedback */
+  --color-success: #10B981;
+  --color-error: #EF4444;
+  --color-focus: #8B0000;
+
+  /* Typography Scale */
+  --font-display: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Font Sizes using clamp for fluid responsiveness */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);   /* 12px - 13px */
+  --font-size-sm: clamp(0.875rem, 0.83rem + 0.2vw, 0.9375rem);   /* 14px - 15px */
+  --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);    /* 16px - 17px */
+  --font-size-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);   /* 18px - 20px */
+  --font-size-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);      /* 20px - 24px */
+  --font-size-2xl: clamp(1.6rem, 1.4rem + 1vw, 2.125rem);       /* 25.6px - 34px */
+  --font-size-3xl: clamp(2rem, 1.7rem + 1.5vw, 2.875rem);       /* 32px - 46px */
+  --font-size-4xl: clamp(2.5rem, 2rem + 2.5vw, 3.75rem);        /* 40px - 60px */
+
+  /* Spacing System */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+  --space-20: 5rem;    /* 80px */
+  --space-24: 6rem;    /* 96px */
+
+  /* Layout */
+  --max-width-content: 1200px;
+  --max-width-narrow: 800px;
+  --header-height: 80px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 2px 4px rgba(26, 26, 36, 0.04), 0 1px 2px rgba(26, 26, 36, 0.06);
+  --shadow-md: 0 4px 12px rgba(26, 26, 36, 0.06), 0 2px 4px rgba(26, 26, 36, 0.04);
+  --shadow-lg: 0 12px 28px rgba(26, 26, 36, 0.08), 0 4px 10px rgba(26, 26, 36, 0.04);
+  --shadow-hover: 0 16px 32px rgba(92, 6, 28, 0.12), 0 4px 12px rgba(26, 26, 36, 0.06);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}

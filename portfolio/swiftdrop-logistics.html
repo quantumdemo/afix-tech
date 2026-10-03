@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study: SwiftDrop Logistics Platform — AfixTech</title>
+  <meta name="description" content="Detailed technical case study examining the architecture, design, and implementation of SwiftDrop Courier & Logistics Platform.">
+  <link rel="canonical" href="https://afixtech.com/portfolio/swiftdrop-logistics.html">
+
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SwiftDrop Logistics Platform",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "author": {
+      "@type": "Organization",
+      "name": "AfixTech"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-logo" aria-label="AfixTech Home">
+        <div class="logo-icon" aria-hidden="true">A</div>
+        <div class="brand-text">
+          <span class="brand-name">AfixTech</span>
+          <span class="brand-subtitle">Communications Networks</span>
+        </div>
+      </a>
+
+      <div class="nav-backdrop" id="navBackdrop"></div>
+
+      <nav class="nav-menu" id="primaryNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../services.html" class="nav-link">Services</a></li>
+          <li><a href="../portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="../process.html" class="nav-link">Process</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="../contact.html" class="btn btn-primary">Start a Project</a>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="case-hero">
+      <div class="container reveal">
+        <a href="../portfolio.html" class="nav-link" style="font-size: var(--font-size-xs); font-weight:700; color:var(--color-deep-red);">&larr; Back to Portfolio</a>
+        <h1 style="margin-top: var(--space-3);">SwiftDrop Logistics Platform</h1>
+        <p class="lead" style="margin-top: var(--space-2);">
+          A responsive courier and logistics web application featuring consignment booking, shipment tracking, and administrative dispatch tools.
+        </p>
+
+        <div class="case-meta-grid">
+          <div>
+            <div class="case-meta-label">Category</div>
+            <div class="case-meta-value">Logistics & Courier</div>
+          </div>
+          <div>
+            <div class="case-meta-label">Client</div>
+            <div class="case-meta-value">SwiftDrop Logistics</div>
+          </div>
+          <div>
+            <div class="case-meta-label">Role</div>
+            <div class="case-meta-value">Full Stack Web Architecture</div>
+          </div>
+          <div>
+            <div class="case-meta-label">Stack</div>
+            <div class="case-meta-value">Flask / PostgreSQL / JS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container-narrow">
+
+        <!-- 1. The Challenge -->
+        <article class="reveal" style="margin-bottom: var(--space-12);">
+          <span class="eyebrow">01. THE CHALLENGE</span>
+          <h2 style="font-size: var(--font-size-2xl); margin-top: var(--space-1);">Streamlining Courier Operations & Shipment Tracking</h2>
+          <p style="margin-top: var(--space-4); color: var(--color-ink-secondary);">
+            SwiftDrop required a modern web platform capable of handling dispatch scheduling, real-time shipment status tracking, and automated quote estimates. The platform needed to remain lightweight and accessible across mobile devices used by field delivery drivers.
+          </p>
+        </article>
+
+        <!-- 2. The Solution -->
+        <article class="reveal" style="margin-bottom: var(--space-12);">
+          <span class="eyebrow">02. THE SOLUTION</span>
+          <h2 style="font-size: var(--font-size-2xl); margin-top: var(--space-1);">Modular Architecture & Real-Time Tracking UI</h2>
+          <p style="margin-top: var(--space-4); color: var(--color-ink-secondary);">
+            We designed and constructed a user interface integrated with backend tracking endpoints. Customers can instantly input shipment tracking IDs to view real-time status updates, while dispatchers utilize an optimized dashboard.
+          </p>
+        </article>
+
+        <!-- 3. Key Features -->
+        <article class="reveal" style="margin-bottom: var(--space-12);">
+          <span class="eyebrow">03. KEY FEATURES</span>
+          <h2 style="font-size: var(--font-size-2xl); margin-top: var(--space-1);">Operational Excellence Features</h2>
+          <ul style="margin-top: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); color: var(--color-ink-secondary);">
+            <li>&bull; <strong>Instant Consignment Search:</strong> Rapid consignment tracking UI with real-time status updates.</li>
+            <li>&bull; <strong>Delivery Quote Engine:</strong> Automated price estimation based on package weight, volume, and destination.</li>
+            <li>&bull; <strong>Driver Portal UI:</strong> Streamlined mobile dashboard optimized for low-bandwidth cellular connections.</li>
+            <li>&bull; <strong>Accessible Forms:</strong> Native HTML5 constraint validation and screen-reader accessible input structures.</li>
+          </ul>
+        </article>
+
+        <!-- 4. Technology Stack -->
+        <article class="reveal" style="margin-bottom: var(--space-12);">
+          <span class="eyebrow">04. TECHNOLOGY</span>
+          <h2 style="font-size: var(--font-size-2xl); margin-top: var(--space-1);">Technology Utilized</h2>
+          <div class="tech-tags" style="margin-top: var(--space-4);">
+            <span class="tag tag-burgundy">Flask</span>
+            <span class="tag tag-burgundy">JavaScript ES6</span>
+            <span class="tag tag-burgundy">PostgreSQL</span>
+            <span class="tag tag-burgundy">CSS3 Flexbox/Grid</span>
+          </div>
+        </article>
+
+        <!-- 5. Outcome -->
+        <article class="reveal">
+          <span class="eyebrow">05. OUTCOME</span>
+          <h2 style="font-size: var(--font-size-2xl); margin-top: var(--space-1);">Improved Operational Efficiency</h2>
+          <p style="margin-top: var(--space-4); color: var(--color-ink-secondary);">
+            The completed platform delivers an intuitive experience for consignment tracking, reducing direct phone support inquiries and improving operational transparency for SwiftDrop Logistics.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="section bg-burgundy">
+      <div class="container text-center reveal">
+        <h2 style="color: #ffffff;">Need a custom logistics or operational web portal?</h2>
+        <p class="lead" style="margin-top: var(--space-4); margin-bottom: var(--space-8); margin-left: auto; margin-right: auto;">
+          Contact AfixTech today to discuss your technical platform requirements.
+        </p>
+        <a href="../contact.html" class="btn btn-secondary btn-lg">Start a Project &rarr;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-logo" aria-label="AfixTech Home">
+            <div class="logo-icon" aria-hidden="true" style="background:#ffffff; color:var(--color-burgundy);">A</div>
+            <div class="brand-text">
+              <span class="brand-name" style="color:#ffffff;">AfixTech</span>
+              <span class="brand-subtitle" style="color:rgba(255,255,255,0.7);">Communications Networks</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Bold web design solutions with AfixTech. We build professional, conversion-focused websites engineered for your business success.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../process.html">Process</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Services</h3>
+          <ul class="footer-links">
+            <li><a href="../services.html#business">Business Websites</a></li>
+            <li><a href="../services.html#ecommerce">E-commerce Stores</a></li>
+            <li><a href="../services.html#landing">Landing Pages</a></li>
+            <li><a href="../services.html#delivery">Logistics Portals</a></li>
+            <li><a href="../services.html#realestate">Real Estate Websites</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Direct Contact</h3>
+          <ul class="footer-links" style="font-size:0.875rem; color:rgba(255,255,255,0.85);">
+            <li><strong>Phone:</strong> <a href="tel:+2348105921083">+234 810 592 1083</a></li>
+            <li><strong>Email:</strong> <a href="mailto:afixtech.cn@gmail.com">afixtech.cn@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AfixTech. All rights reserved.</p>
+        <p>AfixTech Communications Networks — Professional Static Web Engineering</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>
