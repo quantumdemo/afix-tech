@@ -143,11 +143,11 @@
   background-color: var(--color-burgundy);
 }
 
-/* Nav Menu Mobile Drawer (Hidden offscreen by default) */
+/* Nav Menu Mobile Drawer (Strictly hidden offscreen & invisible by default) */
 .nav-menu {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: 0;
   width: 85%;
   max-width: 380px;
   height: 100vh;
@@ -157,7 +157,11 @@
   align-items: flex-start;
   padding: var(--space-20) var(--space-8) var(--space-10);
   box-shadow: var(--shadow-lg);
-  transition: right var(--transition-normal);
+  transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform var(--transition-normal), visibility var(--transition-normal), opacity var(--transition-normal);
   z-index: 1000;
   overflow-y: auto;
 }
@@ -165,7 +169,10 @@
 /* Open state on mobile */
 .nav-menu[data-open="true"],
 .nav-menu.is-open {
-  right: 0;
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .nav-list {
@@ -254,6 +261,10 @@
     align-items: center;
     padding: 0;
     box-shadow: none;
+    transform: none !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
     z-index: auto;
     overflow-y: visible;
     gap: var(--space-6);
