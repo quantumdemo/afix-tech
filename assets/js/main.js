@@ -13,6 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initPortfolioFilter();
 
+  // Dynamic Footer Year
+  const yearSpans = document.querySelectorAll('.current-year');
+  const currentYear = new Date().getFullYear();
+  yearSpans.forEach(span => {
+    span.textContent = currentYear;
+  });
+
   // Highlight header on scroll
   const header = document.querySelector('.site-header');
   if (header) {
