@@ -69,9 +69,9 @@ export function initContactForm() {
       }
     });
 
-    // Honeypot check
+    // Honeypot check (checkbox is checked by bots)
     const honeypot = form.querySelector('input[name="botcheck"]');
-    if (honeypot && honeypot.value) {
+    if (honeypot && (honeypot.checked || (honeypot.type !== 'checkbox' && honeypot.value))) {
       return; // Silent fail for bots
     }
 
