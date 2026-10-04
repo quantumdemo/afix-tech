@@ -75,14 +75,14 @@
 
 .browser-content {
   position: relative;
-  aspect-ratio: 16 / 11;
   background-color: var(--color-bg-surface);
   overflow: hidden;
 }
 
 .browser-content img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 16 / 11;
   object-fit: cover;
 }
 
