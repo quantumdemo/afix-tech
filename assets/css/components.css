@@ -52,15 +52,15 @@
 }
 
 .brand-logo .logo-img {
-  height: 36px;
+  height: 42px;
   width: auto;
   display: block;
   object-fit: contain;
 }
 
-/* Footer Brand Logo Light Variant for Dark Burgundy Background */
+/* Footer Brand Logo Light Variant */
 .footer-brand .brand-logo .logo-img {
-  filter: brightness(0) invert(1);
+  filter: none;
 }
 
 /* -------------------------------------------------------------
