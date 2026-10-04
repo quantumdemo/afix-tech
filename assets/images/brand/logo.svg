@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" width="240" height="48" fill="none">
+  <!-- Logo Icon Symbol -->
+  <g transform="translate(2, 2)">
+    <!-- Outer ring in deep burgundy -->
+    <circle cx="22" cy="22" r="16" stroke="#5C061C" stroke-width="4.5" fill="none"/>
+    <!-- Stylized inner 'A' stroke in bright deep red -->
+    <path d="M12 33 L22 10 L32 33 M16 25 L28 25" stroke="#8B0000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="54" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="22" letter-spacing="-0.5px">
+    <tspan fill="var(--logo-text-primary, #1A1A24)">Afix</tspan>
+    <tspan fill="#5C061C">Tech</tspan>
+  </text>
+  <text x="54" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="8.5" letter-spacing="1.2px" fill="var(--logo-text-sub, #5C061C)">COMMUNICATIONS NETWORKS</text>
+</svg>
