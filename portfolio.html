@@ -72,6 +72,7 @@
         <!-- Filter Controls -->
         <div class="filter-bar reveal">
           <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="finance">Finance & Investment</button>
           <button class="filter-btn" data-filter="portfolio">Portfolio</button>
           <button class="filter-btn" data-filter="logistics">Logistics</button>
           <button class="filter-btn" data-filter="in-development">In Development</button>
@@ -79,12 +80,32 @@
 
         <div class="grid-2">
 
-          <!-- Project 1: AfixTech Portfolio -->
-          <article class="card project-card project-card-item card-hover reveal" data-category="portfolio">
+          <!-- Project 1: PrimeCore Investment Platform -->
+          <article class="card project-card project-card-item card-hover reveal" data-category="finance">
             <div class="card-media">
-              <div style="width:100%; height:100%; background: linear-gradient(135deg, var(--color-burgundy), #3D0312); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1.2rem;">
-                AfixTech Portfolio Web Platform
+              <img src="assets/images/screenshots/primecore-desktop.png" alt="PrimeCore Investment Platform" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+            </div>
+            <div class="card-content">
+              <span class="card-category">Investment & Finance Platform</span>
+              <h3 class="card-title">PrimeCore Investment Portal</h3>
+              <p class="card-desc">A responsive digital investment management platform engineered for asset tracking, ROI calculations, and user onboarding.</p>
+              <div class="tech-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS Grid/Flexbox</span>
+                <span class="tag">Vercel</span>
+                <span class="tag">Responsive UI</span>
               </div>
+              <div style="display:flex; gap: var(--space-3); margin-top: var(--space-2); align-items: center;">
+                <a href="portfolio/primecore-investment.html" class="btn btn-outline btn-sm">View Case Study &rarr;</a>
+                <a href="https://primecore-weld.vercel.app/" target="_blank" rel="noopener noreferrer" style="font-size: var(--font-size-xs); font-weight:700; color: var(--color-burgundy); text-decoration: underline;">Live Site &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AfixTech Portfolio -->
+          <article class="card project-card project-card-item card-hover reveal" data-category="portfolio" style="transition-delay: 150ms;">
+            <div class="card-media">
+              <img src="assets/images/screenshots/afixtech-desktop.png" alt="AfixTech Portfolio Web Platform" style="width:100%; height:100%; object-fit:cover; object-position:top;">
             </div>
             <div class="card-content">
               <span class="card-category">Portfolio Showcase</span>
@@ -96,12 +117,15 @@
                 <span class="tag">Vanilla JS</span>
                 <span class="tag">Web3Forms</span>
               </div>
-              <a href="portfolio/afixtech-portfolio.html" class="btn btn-outline btn-sm">View Case Study &rarr;</a>
+              <div style="display:flex; gap: var(--space-3); margin-top: var(--space-2); align-items: center;">
+                <a href="portfolio/afixtech-portfolio.html" class="btn btn-outline btn-sm">View Case Study &rarr;</a>
+                <a href="https://afixtech.vercel.app/" target="_blank" rel="noopener noreferrer" style="font-size: var(--font-size-xs); font-weight:700; color: var(--color-burgundy); text-decoration: underline;">Live Site &rarr;</a>
+              </div>
             </div>
           </article>
 
-          <!-- Project 2: SwiftDrop Logistics Platform -->
-          <article class="card project-card project-card-item card-hover reveal" data-category="logistics" style="transition-delay: 150ms;">
+          <!-- Project 3: SwiftDrop Logistics Platform -->
+          <article class="card project-card project-card-item card-hover reveal" data-category="logistics">
             <div class="card-media">
               <div style="width:100%; height:100%; background: linear-gradient(135deg, #1E293B, #0F172A); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1.2rem;">
                 SwiftDrop Logistics Platform
@@ -121,8 +145,8 @@
             </div>
           </article>
 
-          <!-- Placeholder Project 3 -->
-          <article class="card project-card project-card-item reveal" data-category="in-development" style="opacity:0.8;">
+          <!-- Placeholder Project 4 -->
+          <article class="card project-card project-card-item reveal" data-category="in-development" style="transition-delay: 150ms; opacity:0.8;">
             <div class="card-media">
               <div style="width:100%; height:100%; background: #E2E8F0; display:flex; align-items:center; justify-content:center; color:#64748B; font-weight:600;">
                 [In Development — Corporate Platform]
@@ -135,25 +159,6 @@
               <div class="tech-tags">
                 <span class="tag">HTML5</span>
                 <span class="tag">CSS Grid</span>
-              </div>
-              <span style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-ink-muted);">In Development</span>
-            </div>
-          </article>
-
-          <!-- Placeholder Project 4 -->
-          <article class="card project-card project-card-item reveal" data-category="in-development" style="transition-delay: 150ms; opacity:0.8;">
-            <div class="card-media">
-              <div style="width:100%; height:100%; background: #E2E8F0; display:flex; align-items:center; justify-content:center; color:#64748B; font-weight:600;">
-                [In Development — E-commerce Platform]
-              </div>
-            </div>
-            <div class="card-content">
-              <span class="card-category" style="color:#64748B;">E-commerce</span>
-              <h3 class="card-title">Retail E-commerce Platform</h3>
-              <p class="card-desc">Scheduled client build currently in Stage 02 (Architecture & Content Modeling).</p>
-              <div class="tech-tags">
-                <span class="tag">Vanilla JS</span>
-                <span class="tag">CSS Tokens</span>
               </div>
               <span style="font-size: var(--font-size-xs); font-weight: 700; color: var(--color-ink-muted);">In Development</span>
             </div>
@@ -218,7 +223,6 @@
             <li><strong>Phone:</strong> <a href="tel:08140020576">08140020576</a></li>
             <li><strong>Email:</strong> <a href="mailto:afezolalekanalimi@gmail.com">afezolalekanalimi@gmail.com</a></li>
           </ul>
-          <!-- Social Media Links (Placeholder - to be added when confirmed) -->
         </div>
       </div>
 
